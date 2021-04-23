@@ -1,17 +1,54 @@
 @media (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
     .advantages {
         &__item {
             width: 205px;
         }
     }
+
+    .consultation {
+        padding: 70px 0 70px;
+    }
+
+    .carousel {
+        &__inner {
+            max-width: 600px;
+            img {
+                width: 70%;
+                margin: 0 auto;
+        }
+    }
+}
+
+    .catalog {
+        padding-bottom: 60px;
+        &__content {
+            justify-content: space-around;
+        }
+    }
+
+    .reviews {
+        &-item {
+            justify-content: space-around;
+            &__wrapper {
+                width: 490px;
+                margin-right: 0px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
+
     .header {
         &__official {
             display: none;
         }
     }
+    
     .promo {
         padding-bottom: 45px;
         &__header {
@@ -38,6 +75,67 @@
             margin-top: 10px;
         }
     }
+
+    .consultation {
+        &__title {
+            font-size: 32px;
+        }
+        &__descr {
+            margin-top: 50px;
+            font-size: 18px;
+        }
+    }
+
+    .carousel {
+        &__inner {
+            max-width: 400px;
+            img {
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .catalog {
+        padding-bottom: 60px;
+        &__tab {
+            font-size: 16px;
+        }
+    }
+
+    .reviews {
+        &-item {
+            flex-wrap: wrap;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            &__wrapper {
+                text-align: center;
+            }
+            &__name {
+                margin-top: 10px;
+            }
+            &__text {
+                text-align: left;
+            }
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 25px 39px 60px;
+            width: 300px;
+            height: 200px;
+        }
+        &__addr {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &__phone {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -55,14 +153,18 @@
             }
         }
     }
+    
     .promo {
         &__wrapper {
             margin-top: 50px;
             align-items: center;
             text-align: center;
         }
+        &__header {
+            font-size: 30px;
+        }
         &__subheader {
-            font-size: 18px;
+            font-size: 16px;
         }
         &__icons {
             width: auto;
@@ -78,13 +180,88 @@
             }
         }
     }
+    
     .advantages {
         padding: 50px 0;
         &__header {
-            font-size: 25px;
+            font-size: 20px;
         }
         &__item {
             width: 250px;
+        }
+    }
+
+    .button {
+        &_main {
+            width: 260px;
+        }
+        &_submit {
+            width: 265px;
+        }
+    }
+
+    .consultation {
+        min-height: 550px;
+        padding: 50px 0 50px;
+        &__title {
+            max-width: 450px;
+            font-size: 20px;
+        }
+        &__descr {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+    }
+
+    .feed-form {
+        width: 265px;
+    }
+
+    .carousel {
+        &__inner {
+            max-width: 170px;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .slick-prev, .slick-next  {
+            img {
+                width: 15px;
+                height: 25px;
+            }
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            font-size: 16px;
+        }
+        &__tab {
+            margin-bottom: 10px;
+        }
+        &-item__content {
+            width: 51%;
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 5px 10px 10px;
+            width: 200px;
+            height: 165px;
+        }
+        &__addr {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        &__phone {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        &__social-item {
+            margin-right: 8px;
         }
     }
 }
