@@ -57,6 +57,9 @@
         margin-bottom: 20px;
         border: 2px solid #e8e8e8;
         overflow: hidden;
+        ul {
+            padding-left: 0;
+        }
         &__img {
             display: block;
             margin: 0 auto;
@@ -157,7 +160,7 @@
                     width: 5px;
                     height: 5px;
                     background-color: $main-color;
-                    left: -14px;
+                    left: -17px;
                     top: 6px;
                 }
             }
